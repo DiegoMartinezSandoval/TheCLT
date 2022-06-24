@@ -77,6 +77,17 @@ Yes this graph is unimodal. There is only 1 peak so there can't be a comparison 
 
 finally for 36 random samples.
 
+```{r}
+numb = 36
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 2")
+```
+
+This plot is unimodal. There is only 1 peak so there can't be a comparison in peaks. 
+
+
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
