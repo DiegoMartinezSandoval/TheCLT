@@ -65,6 +65,16 @@ This is unimodal. Since there is 1 distinctive peak. It reaches about .029. Ther
 
 then 16 random samples
 
+```{r}
+numb = 16
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 2")
+```
+Yes this graph is unimodal. There is only 1 peak so there can't be a comparison in size. 
+
+
 finally for 36 random samples.
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
