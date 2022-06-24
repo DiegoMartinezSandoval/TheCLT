@@ -23,7 +23,8 @@ print(sd(KK_data))
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
-No it's not unimodal. It's bimodal. There are two peaks. Both peaks are the same size. There are 0 outliers in the plot. The mean is 49.  The SD is 30.6. 
+No it's not unimodal. It's bimodal. There are two peaks. Both peaks are the same size. There are 0 outliers in the plot. The mean is 50.4  The SD is 41.8.  When I shade in the plot and properly calculate the special deviation, my answers make sense. 
+
 
 
 
@@ -56,8 +57,6 @@ Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Ar
 No the plot isn't unimodal. The plot is trimodal. There are 3 peaks. The 3 peaks are not all the same. The peak in the middle is the largest peak and stands out the most. The two at the side are equal size to each other. There are no outliers. The mean is 50.3. The SD is 29.1. 
  
  
- for these data mean = `
-
 Do this again for 4 random samples
 
 ```{r}
@@ -116,7 +115,9 @@ print(sd(x.avg))
 
 densityplot(x.avg,main="sample size 16")
 ```
-Yes this graph is unimodal. There is only 1 peak so there can't be a comparison in size. The mean is 50.6 The SD is 10.6. 
+
+
+Yes this graph is unimodal. There is only 1 peak so there can't be a comparison in size. The mean is 50.6 The SD is 10.3. When I shade in the plot and properly calculate the special deviation, my answers make sense. 
 
 
 finally for 36 random samples.
@@ -135,7 +136,7 @@ print(sd(x.avg))
 densityplot(x.avg,main="sample size 36")
 ```
 
-This plot is unimodal. There is only 1 peak so there can't be a comparison in peaks. The mean is 50. The SD is 6.7. 
+This plot is unimodal. There is only 1 peak so there can't be a comparison in peaks. The mean is 50. The SD is 6.7. When I shade in my plot by estimating and try to properly calculate my standard deviation, my answers are proven realistic.The standard deviation shosw how large the spread in a plot is. 
 
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
