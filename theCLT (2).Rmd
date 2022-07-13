@@ -33,7 +33,7 @@ Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1
 
 ```{r}
 numb = 2
-Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)  
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 x.std <- apply(mdata, 1, sd)
